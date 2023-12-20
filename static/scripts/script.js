@@ -5,6 +5,7 @@ function showSection(sectionId) {
             section.style.display = 'block';
         } else {
             section.style.display = 'none';
-        }
+        }  
     });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 }
