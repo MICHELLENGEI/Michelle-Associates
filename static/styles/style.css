@@ -15,7 +15,7 @@
     align-items: center;
     
 }
-.header .top .mail{
+.header .top .phone{
     margin-left: 50px;
 }
 
@@ -280,6 +280,7 @@
 }
 
 .projects .card {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
     background: #fff;
     color: #000;
     border: none;
@@ -287,11 +288,11 @@
 }
 
 .projects .card-body {
-    padding-left: 0%;
+    padding-left: 2%;
 }
 
 .projects .card h5 {
-    margin-left: 0%;
+    margin-left: 1%;
     color: #b48701;
     text-align: left;
 }
@@ -314,7 +315,7 @@
 
 .aboutpage {
     /* padding-top: 100px; */
-    padding-bottom: 100px;
+    /* padding-bottom: 100px; */
     background: #fff;
     color: #000;
 }
@@ -363,30 +364,32 @@
 }
 
 .aboutpage .container .row .card {
-    padding: 3.5em 1em;
     border-radius: 0.6em;
     color: #FFF;
     cursor: pointer;
     transition: 0.3s;
+    margin-bottom: 100px;
     background-color: #b48701;
+   
 }
 
 .aboutpage .container .row .card .img-container {
-    width: 154m;
+    width: 14em;
     height: 14em;
-    background-color: #b48701;
-    padding: 0.5em;
     border-radius: 50%;
-    margin: 0 auto 2em auto;
+    margin: 0 auto 0 auto;
+    border: none;
 }
 
 .aboutpage .container .row .card img {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
     width: 100%;
     border-radius: 50%;
+    background-color: #fff;
 }
 
 .aboutpage .container .row .card h3 {
-    color: #FFF;
+    color: #fff;
     font-weight: 500;
     font-size: 24px;
 }
@@ -396,11 +399,13 @@
     text-transform: uppercase;
     margin: 0.5em 0 2em 0;
     letter-spacing: 2px;
+    color: #fff;
 }
 
 .aboutpage .container .row .icons {
     width: 50%;
     min-width: 180px;
+    color: #fff;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -412,7 +417,7 @@
     font-size: 1.4em;
 }
 
-.aboutpage .container .row .card:hover .img-container {
+.aboutpage .container .row .icons a:hover {
     transform: scale(1.15);
 }
 
@@ -439,7 +444,7 @@
 
 
 .servicespage .services {
-    padding-bottom: 150px;
+    padding-bottom: 100px;
     background: #fff;
     color: #000;
 }
@@ -485,7 +490,7 @@
 .servicespage .services .card {
     background: #b48701;
     margin: 20px;
-    border: 2px solid #b48701;
+    border: none;
 }
 
 .servicespage .services .card a {
@@ -521,6 +526,7 @@
 }
 
 .servicespage .services .testimonials .card {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -539,6 +545,7 @@
     border-radius: 50%;
     height: 100px;
     width: 100px;
+    margin-top: 10px;
 
 }
 
@@ -577,6 +584,8 @@
 .servicespage .testimonials .card .card-body .icons i:hover{
     transform: scale(2);
 }
+
+
 .projectspage h3 {
     padding-top: 50px;
     text-decoration-line: underline;
@@ -585,14 +594,59 @@
     color: #b48701;
     text-align: center;
 }
+.projectspage p{
+    text-align: center;
+    /* margin-left: 50px;
+    margin-right: 50px; */
+}
+.projectspage .row {
+    justify-content: center;
+
+}
+.projectspage .projectsbutton .round-button {
+    border-radius: 50%; 
+    width: 150px; 
+    height: 150px; 
+    background-color: #b48701; 
+    color: #fff;
+    border:none; 
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  }
+  .projectspage .projectsbutton .round-button:hover{
+    background-color: #fff; 
+    color: #b48701;
+  }
+  
 .projectspage fieldset h4{
-    margin: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     font-weight: 900;
     font-size: 36px;
     color: #b48701;
-    text-align: left; 
+    text-align: center; 
+}
+ 
+.projectspage fieldset .card h5 {
+    margin-left: 0%;
+    color: #b48701;
+    text-align: left;
+}
+.projectspage fieldset .card{
+    margin: 20px;
 }
 
+.projectspage fieldset .card p {
+    text-align: center;
+    color: #000
+}
+
+.projectspage fieldset .card a {
+    width: 100%;
+    background: #b48701;
+    color: #fff;
+}
 
 /* footer */
 .footer {
